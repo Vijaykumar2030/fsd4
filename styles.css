@@ -1,4 +1,4 @@
-/* Reset Browser Defaults */
+/* Reset browser default styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,147 +7,123 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+    background-color: #f7f7f7;
+    padding: 20px;
 }
 
-/* Navigation Bar */
-.navbar {
+.container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
     padding: 20px;
-    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.navbar .logo {
-    font-size: 1.5rem;
-    color: white;
+/* Left Section */
+.left {
+    width: 60%;
+    padding-right: 20px;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links li a {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-}
-
-.nav-links li a:hover {
-    background-color: #555;
-    border-radius: 5px;
-}
-
-/* Hero Section */
-.hero {
-    height: 100vh;
-    background: url('https://via.placeholder.com/1500') no-repeat center center/cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
-
-.hero h1 {
-    font-size: 3rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-}
-
-.hero button {
-    padding: 10px 20px;
-    margin-top: 20px;
-    border: none;
-    background-color: #ff5722;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.hero button:hover {
-    background-color: #e64a19;
-}
-
-/* About Section */
-.about, .services {
-    padding: 50px;
-    text-align: center;
-}
-
-.about h2, .services h2 {
+.left h1 {
     font-size: 2rem;
+    color: #333;
+}
+
+.left h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+.left p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
     margin-bottom: 20px;
 }
 
-.about p {
-    font-size: 1.1rem;
+.left ul {
+    list-style-type: none;
 }
 
-/* Services Section */
-.service-container {
-    display: flex;
-    justify-content: space-around;
+.left ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
 }
 
-.service {
-    background-color: #f0f0f0;
+/* Right Section (Form) */
+.right {
+    width: 35%;
+    background-color: #1c3c8c;
     padding: 20px;
-    width: 30%;
-    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.right h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+form input,
+form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
     border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
 }
 
-.service:hover {
-    background-color: #ccc;
+form input {
+    height: 40px;
 }
 
-/* Footer Section */
-footer {
-    padding: 20px;
-    background-color: #333;
+form textarea {
+    height: 80px;
+    resize: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #00c3a1;
     color: white;
-    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
 }
 
-footer .social-icons {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-footer .social-icons li a {
-    text-decoration: none;
-    color: white;
-}
-
-footer .social-icons li a:hover {
-    color: #ff5722;
+button:hover {
+    background-color: #00a582;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .service-container {
+    .container {
         flex-direction: column;
     }
 
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
+    .left, .right {
+        width: 100%;
     }
 
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
+    .left {
+        padding-right: 0;
     }
 }
