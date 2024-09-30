@@ -3,69 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Landing Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Landing Page | HubSpot Template</title>
+    
+    <!-- Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to CSS file -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- Header Section -->
-    <header>
-        <div class="container">
-            <nav>
-                <h1 class="logo">LandingPage</h1>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">YourLogo</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#signup" class="cta">Get Started</a></li>
+            </ul>
+        </nav>
+        <!-- Theme Switcher -->
+        <button id="theme-toggle" class="theme-switcher">Switch Theme</button>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h2>5 Ways to Build a Website on the Cheap</h2>
-                <p>Get insights into creating affordable websites with this eBook.</p>
+        <div class="hero-content">
+            <h1 contenteditable="true">Supercharge Your Growth</h1>
+            <p contenteditable="true">Empower your business with the right tools and strategies.</p>
+            <div class="cta-buttons">
+                <a href="#signup" class="cta-primary">Get Started</a>
+                <a href="#learnmore" class="cta-secondary">Learn More</a>
             </div>
-            <div class="hero-form">
-                <h3>Send me the ebook!</h3>
-                <form>
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" required>
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name">
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="4"></textarea>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
+            <!-- Run Test Button -->
+            <button id="run-test" class="run-test-btn">Run Test</button>
+            <p id="test-result" class="test-result"></p>
         </div>
     </section>
 
-    <!-- Content Section -->
-    <section class="content">
+    <!-- Features Section -->
+    <section id="features" class="features">
         <div class="container">
-            <h2>What's Inside?</h2>
-            <p>Discover the tips and tricks for building a website on a budget.</p>
-            <ul>
-                <li>Far far away, behind the word mountains, from the countries Vokalia.</li>
-                <li>Far far away, behind the word mountains, from the countries Vokalia.</li>
-                <li>Far far away, behind the word mountains, from the countries Vokalia.</li>
-            </ul>
+            <h2>Features</h2>
+            <div class="feature-item">
+                <h3>Automation Tools</h3>
+                <p>Streamline your workflows with powerful automation.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Advanced Analytics</h3>
+                <p>Get detailed insights into your business performance.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Seamless Integration</h3>
+                <p>Connect with your favorite tools easily and efficiently.</p>
+            </div>
         </div>
     </section>
 
     <!-- Footer Section -->
     <footer>
-        <div class="container">
-            <p>© 2024 LandingPage. All rights reserved.</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
         </div>
     </footer>
+
+    <!-- JavaScript for dynamic features -->
+    <script src="script.js"></script>
+
 </body>
-</html
+</html>
