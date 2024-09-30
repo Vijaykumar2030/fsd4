@@ -3,43 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5 Ways to Build a Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="content">
-            <h1>5 Ways to Build a Website on the Cheap</h1>
-            <div class="section">
-                <h2>What's Inside?</h2>
-                <p>
-                    Morbi et dolor est. Donec at dolor vehicula, molestie erat non, rutrum tellus. Vestibulum in eros non augue convallis pulvinar. Aliquam erat volutpat. 
-                </p>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <h1 class="logo">LandingPage</h1>
                 <ul>
-                    <li>Far far away, behind the word mountains, far from the countries Vokalia</li>
-                    <li>Far far away, behind the word mountains, far from the countries Vokalia</li>
-                    <li>Far far away, behind the word mountains, far from the countries Vokalia</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>5 Ways to Build a Website on the Cheap</h2>
+                <p>Get insights into creating affordable websites with this eBook.</p>
+            </div>
+            <div class="hero-form">
+                <h3>Send me the ebook!</h3>
+                <form>
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" required>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </div>
+    </section>
 
-        <div class="form-section">
-            <h2>Send me the ebook!</h2>
-            <form>
-                <label for="email">Email*</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="first-name">First Name*</label>
-                <input type="text" id="first-name" name="first-name" required>
-
-                <label for="last-name">Last Name*</label>
-                <input type="text" id="last-name" name="last-name" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message"></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
+    <!-- Content Section -->
+    <section class="content">
+        <div class="container">
+            <h2>What's Inside?</h2>
+            <p>Discover the tips and tricks for building a website on a budget.</p>
+            <ul>
+                <li>Far far away, behind the word mountains, from the countries Vokalia.</li>
+                <li>Far far away, behind the word mountains, from the countries Vokalia.</li>
+                <li>Far far away, behind the word mountains, from the countries Vokalia.</li>
+            </ul>
         </div>
-    </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>© 2024 LandingPage. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+</html

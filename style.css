@@ -1,45 +1,142 @@
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
+    font-family: 'Roboto', sans-serif;
     color: #333;
+    line-height: 1.6;
 }
 
 .container {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-    max-width: 1200px;
+    width: 80%;
     margin: auto;
 }
 
-.content, .form-section {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Header */
+header {
+    background-color: #f4f4f4;
+    padding: 10px 0;
 }
 
-.content {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #eef6fd;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
     width: 60%;
 }
 
-.content h1 {
-    color: #333;
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-form {
+    width: 35%;
+    background-color: #1e73be;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero-form h3 {
+    margin-bottom: 15px;
+}
+
+.hero-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-form label {
+    margin: 10px 0 5px;
+}
+
+.hero-form input,
+.hero-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.hero-form button {
+    background-color: #00c0a4;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hero-form button:hover {
+    background-color: #00796b;
+}
+
+/* Content Section */
+.content {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.content h2 {
     font-size: 28px;
     margin-bottom: 20px;
 }
 
-.content .section h2 {
-    font-size: 24px;
+.content ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.content ul li {
     margin-bottom: 10px;
 }
 
-.content p {
-    margin-bottom: 20px;
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
 }
