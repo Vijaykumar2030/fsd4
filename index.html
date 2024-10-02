@@ -4,81 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Landing Page | HubSpot Template</title>
-    
-    <!-- Google Fonts for typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- Link to CSS file -->
+    <title>Static Webpage with Navbar, Cards, and Form</title>
+    <script src="https://kit.fontawesome.com/35888ab816.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Header Section -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#">YourLogo</a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#signup" class="cta">Get Started</a></li>
-            </ul>
-        </nav>
-        <!-- Theme Switcher -->
-        <button id="theme-toggle" class="theme-switcher">Switch Theme</button>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 contenteditable="true">Supercharge Your Growth</h1>
-            <p contenteditable="true">Empower your business with the right tools and strategies.</p>
-            <div class="cta-buttons">
-                <a href="#signup" class="cta-primary">Get Started</a>
-                <a href="#learnmore" class="cta-secondary">Learn More</a>
-            </div>
-            <!-- Run Test Button -->
-            <button id="run-test" class="run-test-btn">Run Test</button>
-            <p id="test-result" class="test-result"></p>
+    <nav class="nav-bar">
+        <div class="logo">
+             <img src="https://tse4.mm.bing.net/th?id=OIP.zI3Qk0M7sQq3Dgi8rf-2yAHaHa&pid=Api&P=0&h=180"width="180px" height="80px"/> 
         </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2>Features</h2>
-            <div class="feature-item">
-                <h3>Automation Tools</h3>
-                <p>Streamline your workflows with powerful automation.</p>
+        <ul class="head-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+     <section id="home" class="heading">
+        <h1>Welcome to Our Website</h1>
+        <p>Your success is our priority</p>
+        <button class="btn">Learn More</button>
+     </section>
+        <section id="services" class="cards-section">
+        <h2>Our<span> Services</span></h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4BhpFKCJ0_LAl-WhYLzk-84c-uQCkvKNObg&s" alt="web development" height="160px">
+                <h3>Web Development</h3>
+                <p>We provide top-notch web development services using modern technologies.
+                    We specialize in creating custom, user-friendly websites that are not only visually appealing but also fully functional. Our web development services are designed to help businesses establish a strong online presence.
+                </p>
             </div>
-            <div class="feature-item">
-                <h3>Advanced Analytics</h3>
-                <p>Get detailed insights into your business performance.</p>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwoyqNgInjwhh4kvpVv699esg6-HO2P6u9jg&s" alt="digital marketing" height="160px">
+                <h3>Digital Marketing</h3>
+                <p>Boost your business with our expert digital marketing strategies.
+                   We help businesses grow online through targeted SEO, social media strategies, email campaigns, and engaging content. With data-driven insights, we optimize your digital presence for maximum impact and ROI.
+                </p>
             </div>
-            <div class="feature-item">
-                <h3>Seamless Integration</h3>
-                <p>Connect with your favorite tools easily and efficiently.</p>
+            <div class="card">
+                <img src="https://cdn.shopify.com/s/files/1/0840/8370/3830/articles/1603954182-seo-article-header.png?v=1714646999" alt="seo Optimization" height="160px">
+                <h3>SEO Optimization</h3>
+                <p>Optimize your website to rank higher in search engines and drive more traffic.
+                    Enhance your website’s visibility with our expert SEO services. We improve your site’s content, structure, and performance to help you rank higher on search engines and attract more traffic.</p>
             </div>
         </div>
     </section>
+        <section id="about" class="video-section">
+        <h2>Watch <span>Our</span> Video</h2>
+        <div class="video-container">
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/1sXGfa33zWo?si=fiy1JxXf92T8f9SP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+        <section id="contact" class="contact-section">
+        <h2>Contact <span>Us</span></h2>
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-    <!-- Footer Section -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <button id="btn-1" type="submit">Submit</button>
+        </form>
+    </section>
+
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Your Company. All rights reserved.</p>
-            <ul class="social-links">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">LinkedIn</a></li>
-            </ul>
-        </div>
+        <p>© 2024 My Website | Contact us: maheedevelopersinfotech@example.com</p>
+        <ul class="social-links">
+            <li><a href="http://Facebook.com">Facebook <i class="fa-brands fa-square-facebook fa-xl"></i></a></li>
+            <li><a href="http://Twitter.com">Twitter <i class="fa-brands fa-square-twitter fa-xl"></i></a></li>
+            <li><a href="http://Instagram.com">Instagram <i class="fa-brands fa-square-instagram fa-xl"></i></a></li>
+        </ul>
     </footer>
-
-    <!-- JavaScript for dynamic features -->
-    <script src="script.js"></script>
 
 </body>
 </html>
